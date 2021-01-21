@@ -1,27 +1,24 @@
 ﻿# Header-菜单
 menu:
-  主页: /
-  技术笔记: https://zhousiwei.gitee.io/ibooks/
-  随笔: /tags/随笔/
+  正文页: /
+  随笔: ./随笔/自我介绍
 
 # subNav-子导航
 subNav:
-  github: "#"
-  gitee: "#" # 码云
-  jianshu: "#" #简书
-  cnblog: "#"
+  github: "https://github.com/Crlwebby"
+  #gitee: "#" # 码云
+  #jianshu: "#" #简书
+  #cnblog: "#"
   #blog: "#"
   #csdn: "#"
   #rss: "#"
-  #zhihu: "#"
+  zhihu: "https://www.zhihu.com/people/qing-kuang-xy-shu-sheng"
   #qq: "img/2434387555.jpg"
   #weixin: "img/weixin_.png"
   #weibo: "#"
   #douban: "#"
   #segmentfault: "#"
-  #bilibili: "#"
-  #acfun: "#"
-  #mail: "mailto:zhousiwei0911@qq.com"
+  mail: "mailto:1303965943@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -47,21 +44,21 @@ rss: /atom.xml
 # Content
 
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
-excerpt_link: more
+#excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
-mathjax: false
+mathjax: true
 
 # Open link in a new tab | 是否在新窗口打开链接
 open_in_new:
   article: true  # 文章链接
-  menu: true   # 导航菜单
-  subNav: true  # 子菜单
+  menu: false   # 导航菜单
+  subNav: false  # 子菜单
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
@@ -73,7 +70,7 @@ weixin: /img/weixin.png
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
 toc: 1
 # 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
-toc_hide_index: true
+toc_hide_index: false
 # 目录为空时的提示
 toc_empty_wording: '目录，不存在的…'
 
@@ -86,10 +83,10 @@ baidu_analytics: ''
 google_analytics: ''
 
 # 网站图标
-favicon: /favicon.ico
+favicon: /img/tennis.svg
 
 # 你的头像url
-avatar: /img/head.jpg
+avatar: /img/kamikamiha.jpg
 
 # 是否开启分享
 share_jia: true
@@ -119,7 +116,7 @@ gitment_oauth:
 # 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
 # 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
 giteement:
-  enable: false  # 是否启用码云评论系统
+  enable: true  # 是否启用码云评论系统
   # 是否使用官方js(false可以提升访问速度)
   remote: false
   redirect_uri: ''   # 应用回调地址(请和配置的第三方应用保持一致)
@@ -151,7 +148,7 @@ music:
 # 页面点击小红心
 clickLove:
   # (关闭请设置为false)
-  enable: true
+  enable: false
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github:
@@ -173,7 +170,7 @@ copyright_type: 2
 copyright_text: 
 
 # 网站成立年份(默认为 2018，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2018
+since: 2020
 
 # Progress Bar | 页面加载进度条
 # Demo: http://github.hubspot.com/pace/docs/welcome/
@@ -182,7 +179,7 @@ since: 2018
 #       loading-bar|mac-osx|minimal
 # color: black|blue|green|orange|pink|purple|red|silver|white|yellow|
 progressBar:
-  enable: false
+  enable: true
   type: 'minimal'  # Keep Quotes | 保留引号避免出错(某些type会导致样式重叠排版错误)
   color: blue
 
@@ -192,8 +189,8 @@ apple_touch_icon: '/apple-touch-icon-180x180.png'
 # Tab Title Change | 标签页标题切换
 tab_title_change:
   enable: true
-  left_tab_title: '(つェ⊂) 我藏好了哦~ '
-  return_tab_title: '(*´∇｀*) 被你发现啦~ '
+  left_tab_title: 'crlwebby'
+  return_tab_title: 'a bad guy'
 
 # https://github.com/willin/hexo-wordcount
 # 是否开启字数统计(关闭请设置enable为false)
@@ -216,24 +213,6 @@ activate_power_mode:
 # https://github.com/MlgmXyysd/snow.js
 snow: false
 
-# 看板娘动态模型插件
-## https://github.com/JoeyBling/live2d-widget.js
-live2d:
-  # (关闭请设置为false)
-  enable: false
-  # 模型名称(取值请参考：https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA)
-  model: hibiki
-  display:
-    position: right # 显示位置：left/right(default: 'right')
-    width: 145  # 模型的长度(default: 150)
-    height: 315 # 模型的高度(default: 300)
-    hOffset: 50 # 水平偏移(default: 0)
-    #vOffset: -20 # 垂直偏移(default: -20)
-  mobile:
-    show: false # 是否在移动设备上显示(default: true)
-    scale: 0.6 # 移动设备上的缩放(default: 0.5)
-  react:
-    opacity: 0.8 # 模型透明度(default: 0.7)
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -265,21 +244,6 @@ smart_menu:
 
 # 友情链接
 friends:
-  技术笔记:  #网站名称
-    #网站地址
-    url: https://zhousiwei.gitee.io/ibooks/
-    #网站图片(可忽略不写)
-    img: https://zhousiwei.gitee.io/ibooks/favicon.ico
-    #网站简介(可忽略不写)
-    description: 记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析
-  GitHub:
-    url: https://github.com/JoeyBling
-  码云:
-    url: https://gitee.com/zhousiwei
-  简书:
-    url: https://www.jianshu.com/u/02cbf31a043a
-  CSDN:
-    url: https://blog.csdn.net/qq_30930805
 
 # 关于我
-aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 技术方向：<br/>Web安全/Linux开发<br/>爱好：<br/>网球、长跑<br/>三国史、底层架构<br/>人生信仰：<br/>好好运动，好好学习，<br/>好好玩，好好吃，好好休息！
