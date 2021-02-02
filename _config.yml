@@ -1,9 +1,9 @@
 ﻿# Header-菜单
 menu:
-  正文页: /
-  随笔: ./随笔/自我介绍
+  首页: /
+  自我介绍: ./about
   转载: ./规范/转载
-  填坑: ./规范/issues
+  填坑: ./issues
 
 # subNav-子导航
 subNav:
