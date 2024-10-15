@@ -1,9 +1,9 @@
 ﻿# Header-菜单
 menu:
   首页: /
-  自我介绍: ./about
-  转载: ./规范/转载
-  填坑: ./issues
+  自我介绍: ./about/
+  转载: ./规范/转载/
+  填坑: ./issues/
 
 # subNav-子导航
 subNav:
@@ -106,19 +106,19 @@ disqus: false
 
 # 3、Gitment----基于GitHub的评论系统(关闭请设置gitment_owner为false)
 # 关于如何集成:https://www.jianshu.com/p/ac7658cc912f
-gitment_owner: false      #你的 GitHub ID
+gitment_owner: crlwebby       #你的 GitHub ID
 # 是否使用官方js(false可以提升访问速度，本地修改过一部分的js，官方js可能会出现服务器不稳定，不太建议使用)
 gitment_remote: false
-gitment_repo: ''          #存储评论的 repo name(需要在Github创建)
+gitment_repo: 'crlwebby.github.io'          #存储评论的 repo name(需要在Github创建)
 gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
+  client_id: 'c22438cfa270e9a3ea38'           #client ID
+  client_secret: '6cfdd81b4be6f7308c9cbae91844000db82e46cb'       #client secret
 
 # 4、Giteement----【国内用户建议使用这个，相对比较快】
 # 关于如何集成:https://www.jianshu.com/p/f5c4633524c7
 # 基于码云的评论系统(https://gitee.com/zhousiwei/giteement)
 giteement:
-  enable: true  # 是否启用码云评论系统
+  enable: false  # 是否启用码云评论系统
   # 是否使用官方js(false可以提升访问速度)
   remote: false
   redirect_uri: ''   # 应用回调地址(请和配置的第三方应用保持一致)
@@ -130,12 +130,6 @@ giteement:
   gitment_oauth:
     client_id: ''           #client ID
     client_secret: ''       #client secret
-
-# 访问量统计功能(不蒜子)
-busuanzi:
-  enable: true
-  site_visit: true  # 站点访问量显示
-  article_visit: true  # 文章访问量显示
 
 # 网易云音乐插件
 music:
